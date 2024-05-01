@@ -80,7 +80,7 @@ class MyWidget(QWidget, Ui_Form):
         for key in self.loc_items.keys():
             self.drawrow(key)
         self.comboBox.clear()
-        self.comboBox.addItems(sorted(self.loc_items.keys(), key=lambda key: self.loc_items[key][0]))
+        self.comboBox.addItems(sorted(self.loc_items.keys(), key=lambda x: self.loc_items[x][0]))
 
     # меняет все по комбо-боксу
     def cboxcng(self):

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>431</width>
-    <height>371</height>
+    <height>451</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,13 +17,13 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Помощник в принятии решений</string>
   </property>
   <widget class="QPushButton" name="yes_btn">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
+     <y>108</y>
      <width>201</width>
      <height>51</height>
     </rect>
@@ -62,7 +62,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>80</y>
+     <y>108</y>
      <width>201</width>
      <height>51</height>
     </rect>
@@ -81,8 +81,8 @@
   <widget class="QPushButton" name="reset_btn">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>220</y>
+     <x>90</x>
+     <y>250</y>
      <width>71</width>
      <height>31</height>
     </rect>
@@ -95,7 +95,7 @@
    <property name="geometry">
     <rect>
      <x>220</x>
-     <y>140</y>
+     <y>168</y>
      <width>201</width>
      <height>41</height>
     </rect>
@@ -116,7 +116,7 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>140</y>
+     <y>168</y>
      <width>201</width>
      <height>41</height>
     </rect>
@@ -131,19 +131,6 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="safe_btn">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>220</y>
-     <width>71</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Сохранить</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -191,7 +178,7 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>190</y>
+     <y>218</y>
      <width>81</width>
      <height>21</height>
     </rect>
@@ -201,7 +188,7 @@
    <property name="geometry">
     <rect>
      <x>280</x>
-     <y>190</y>
+     <y>218</y>
      <width>81</width>
      <height>21</height>
     </rect>
@@ -211,7 +198,7 @@
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>190</y>
+     <y>218</y>
      <width>91</width>
      <height>23</height>
     </rect>
@@ -224,9 +211,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>260</y>
+     <y>288</y>
      <width>411</width>
-     <height>101</height>
+     <height>151</height>
     </rect>
    </property>
    <column>
@@ -249,7 +236,7 @@
    <property name="geometry">
     <rect>
      <x>390</x>
-     <y>12</y>
+     <y>10</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -258,17 +245,73 @@
     <string>Ок</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="add_btn">
+  <widget class="QPushButton" name="safe_btn">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>220</y>
+     <y>250</y>
      <width>71</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Добавить</string>
+    <string>Сохранить</string>
+   </property>
+  </widget>
+  <widget class="QLCDNumber" name="lcd">
+   <property name="geometry">
+    <rect>
+     <x>353</x>
+     <y>250</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>411</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="down_btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>250</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="up_btn">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>250</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>▲</string>
    </property>
   </widget>
  </widget>
